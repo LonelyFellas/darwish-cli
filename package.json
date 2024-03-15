@@ -1,0 +1,14 @@
+{
+  "name": "darwish-cli",
+  "version": "0.0.1",
+  "description": "font end cli",
+  "main": "main.js",
+  "bin": {
+    "darwish": "/bin/index.js"
+  }, 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "darwish",
+  "license": "MIT"
+}
