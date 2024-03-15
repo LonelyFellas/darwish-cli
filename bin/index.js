@@ -1,4 +1,6 @@
-#! /usr/bin/env node
-
-// 标识可执行文件node执行
-console.log("Hello World");
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function add(a, b) {
+    return a + b;
+}
+exports.default = add;

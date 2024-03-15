@@ -2,7 +2,7 @@
   "name": "darwish-cli",
   "version": "0.0.1",
   "description": "font end cli",
-  "main": "main.js",
+  "main": "src/index.ts",
   "bin": {
     "darwish": "/bin/index.js"
   },
