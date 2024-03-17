@@ -8,6 +8,7 @@ program
     .version(Pack.version)
     .helpOption("-h, --help", "Display help for command")
     .usage(`<command> [option]`)
+    .command("choice")
     .action(function () {
     inquirer
         .prompt([
