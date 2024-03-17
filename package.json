@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "font end cli",
   "main": "bin/src/index.ts",
-  "bin": {
-    "darwish": "./bin/src/index.js"
-  },
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
