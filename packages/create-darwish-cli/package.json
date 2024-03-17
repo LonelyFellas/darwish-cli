@@ -14,7 +14,9 @@
   "author": "darwish",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/minimist": "^1.2.5",
+    "kolorist": "^1.8.0",
     "minimist": "^1.2.8"
   }
 }
