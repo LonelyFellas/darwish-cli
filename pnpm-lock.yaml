@@ -31,7 +31,14 @@ importers:
         specifier: ^9.0.7
         version: 9.0.7
 
-  packages/create-darwish-cli: {}
+  packages/create-darwish-cli:
+    devDependencies:
+      '@types/minimist':
+        specifier: ^1.2.5
+        version: 1.2.5
+      minimist:
+        specifier: ^1.2.8
+        version: 1.2.8
 
   packages/create-darwish-cli/bin:
     dependencies:
@@ -182,6 +189,10 @@ packages:
     dependencies:
       '@types/through': 0.0.33
       rxjs: 7.8.1
+    dev: true
+
+  /@types/minimist@1.2.5:
+    resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
     dev: true
 
   /@types/node@20.11.28:
@@ -487,6 +498,10 @@ packages:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
     dev: false
+
+  /minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+    dev: true
 
   /mute-stream@1.0.0:
     resolution: {integrity: sha512-avsJQhyd+680gKXyG/sQc0nXaC6rBkPOfyHYcFb9+hdkqQkR9bdnkJ0AMZhke0oesPqIO+mFFJ+IdBc7mst4IA==}

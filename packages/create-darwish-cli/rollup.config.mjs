@@ -1,7 +1,7 @@
 export default {
-  input: "src/index.js",
+  input: "src/index.ts",
   output: {
-    file: "bin/index.js",
-    format: "cjs"
-  }
+    file: "bin/index.mjs",
+    format: "esm"
+  }, 
 }

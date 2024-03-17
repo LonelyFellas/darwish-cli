@@ -2,16 +2,19 @@
   "name": "create-darwish-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "bin": {
     "darwish": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config"
-    
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "darwish",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "minimist": "^1.2.8"
+  }
 }
