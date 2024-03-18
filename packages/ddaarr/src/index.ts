@@ -22,7 +22,6 @@ const argv = minimist<{
   template?: string;
 }>(process.argv.slice(2), { string: ["_"] });
 const cwd = process.cwd();
-console.log("cwd", cwd);
 
 // type ColorFunc = (str: string | number) => string;
 // type Framework = {

@@ -1,14 +1,26 @@
 {
-  "name": "create-darwish-cli",
-  "version": "1.0.0",
+  "name": "create-darwish",
+  "version": "0.0.6",
   "description": "",
   "type": "module",
   "bin": {
-    "darwish": "./index.js"
+    "create-darwish": "./index.js"
+  },
+  "files": [
+    "rollup.config.mjs",
+    "index.js",
+    "templates",
+    "tsconfig.json",
+    "package.json",
+    "bin"
+  ],
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "cusinstall": "npm run build && npm publish --access public"
   },
   "keywords": [],
   "author": "darwish",
