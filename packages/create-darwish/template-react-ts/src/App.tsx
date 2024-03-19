@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { Button, Space } from "antd";
+import { useBearStore } from "./store";
+import { useSetState } from "ahooks";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [states, setStates] = useSetState({
+    name: "darwish",
+    age: 23,
+  });
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Space direction="vertical" className="p-2">
+      <h1 className="text-emerald-600">
+        Hello {states.name}, i am {states.age} year(s) old{" "}
+      </h1>
+      <Button onClick={() => setStates({ age: states.age + 1 })}>Age ++</Button>
+      <BearCounter />
+      <Controls />
+    </Space>
+  );
+}
+function BearCounter() {
+  const bears = useBearStore((state) => state.bears);
+  return <h1>{bears} around here ...</h1>;
 }
 
-export default App
+function Controls() {
+  const increasePopulation = useBearStore((state) => state.increasePopulation);
+  return <Button onClick={increasePopulation}>one up</Button>;
+}
+
+export default App;
