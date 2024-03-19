@@ -1,11 +1,11 @@
 {
-  "name": "create-ddaarr",
-  "version": "1.0.12",
+  "name": "create-darwish",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "create-ddaarr": "./index.js"
+    "create-darwish": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
