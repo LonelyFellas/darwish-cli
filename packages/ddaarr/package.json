@@ -1,6 +1,6 @@
 {
   "name": "create-ddaarr",
-  "version": "1.0.7",
+  "version": "1.0.12",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -18,8 +18,11 @@
   ],
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/cross-spawn": "^6.0.6",
     "@types/minimist": "^1.2.5",

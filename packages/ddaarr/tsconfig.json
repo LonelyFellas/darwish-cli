@@ -1,8 +1,7 @@
 {
   "include": ["src"],
   "compilerOptions": {
-    "outDir": "dist",
-    "target": "ES2022",
+    "outDir": "bin",
     "module": "ES2020",
     "moduleResolution": "bundler",
     "strict": true,
