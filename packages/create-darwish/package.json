@@ -1,6 +1,6 @@
 {
   "name": "create-darwish",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,6 @@
     "create-darwish": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config"
   },
   "files": [
