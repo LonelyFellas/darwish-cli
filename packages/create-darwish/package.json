@@ -1,6 +1,6 @@
 {
   "name": "create-darwish",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -16,9 +16,21 @@
     "template-*",
     "bin"
   ],
-  "keywords": [],
-  "author": "",
+  "keywords": ["font-end", "template", "darwish"],
+  "author": "darwish",
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/LonelyFellas/darwish-cli/blob/main/packages/create-darwish/README.md",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/LonelyFellas/darwish-cli.git",
+    "directory": "packages/create-darwish"
+  },
+  "bugs": {
+    "url": "https://github.com/LonelyFellas/darwish-cli/issues"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
